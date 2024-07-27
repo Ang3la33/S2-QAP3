@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+  background-image: url(../public/dogAPI_background.jpg);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  padding: 10px 20px;
+  background-color: #eea7c7;
+  border: 5px solid #ff83b5;
+  border-radius: 60px;
+}
+
+.header h1 {
+  text-align: center;
+  margin: 0;
+  font-size: 60pt;
+}
+
+.poodle-image-left,
+.poodle-image-right {
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #ff83b5;
+}
+
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  gap: 10px;
+}
+
+.form label {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+  padding: 10px;
+  font-size: 16pt;
+  color: #ff4b85;
+  font-weight: bold;
+  background-color: #ccc;
+  border: 3px solid #ff4b85;
+  border-radius: 20px;
+}
+
+.form select, .form input {
+  margin-top: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.form button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #ff83b5;
+  color: white;
+  font-size: 16pt;
+  font-weight: bold;
+  border: none;
+  border-radius: 60px;
+  cursor: pointer;
+}
+
+.form button:hover {
+  background-color: #ff4b85;
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  border: 5px solid #ff4b85;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.dog-image {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.dog-image:hover {
+  transform: scale(1.2);
+  filter: brightness(1.5);
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #eea7c7;
+  border: 5px solid #ff83b5;
+  border-radius: 60px;
+  margin-top: auto;
+}
+
+.macgyver-image {
+  width: 100px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #ff83b5;
+}
+
+.macgyver-image:hover{
+  transform: scale(1.2);
+  filter: brightness(1.2);
+}
+
+.music{
+  margin-left: 40px;
+  margin-top: 10px;
+  padding: 5px;
+  background-color: #ff4b85;
+  border-radius: 20px;
+  width: fit-content;
+  cursor: pointer;
+}
